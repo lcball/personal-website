@@ -4,7 +4,7 @@
 
 body {
     width: 100%;
-    background: linear-gradient(to right, black 50%, pink 50%);
+    background: linear-gradient(to right, black 50%, rgb(248, 138, 156) 50%);
 }
 
 ul {
