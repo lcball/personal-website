@@ -1,10 +1,9 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Barrio&family=Titan+One&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
 
 body {
-    width: 100%;
-    background: linear-gradient(to right, black 50%, rgb(248, 138, 156) 50%);
+    width: 100% !important;
+    background-color:rgb(248, 138, 156) !important;
+    font-family: 'DynaPuff', cursive !important;
 }
 
 ul {
@@ -16,24 +15,67 @@ li a {
     text-decoration: none;
 }
 
-
-li a:hover{
-    font-size: 43px;
+.home li a:hover {
+    font-size: 3vw;
 }
 
 /* classes */
 
-.col {
+.home {
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 2.5vw;
+    color: white;
+    text-align: center;
 }
 
-/* ids */
+.about {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+    text-align: center;
+}
 
-#name {
-    font-size: 55px;
-    color: white
+.past-projects {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+    text-align: center;
+    width: 90%;
+}
+
+.past-projects .box {
+    float: left;
+    width: 50%;
+}
+
+.past-projects .box .text {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+}
+
+/* Resize for mobile + small browser */
+@media screen and (min-width: 600px) {
+    .home {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .about {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 }
